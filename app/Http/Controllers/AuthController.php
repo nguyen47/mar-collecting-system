@@ -79,9 +79,9 @@ class AuthController extends Controller
 
     public function createRoles()
     {
-        // Role::create(["name" => "admin"]);
-        // Role::create(["name" => "user"]);
-        $user = User::where("id", Auth::user()->id)->first();
-        $user->assignRole("admin");
+        Role::create(["name" => "admin"]);
+        Role::create(["name" => "user"]);
+        // $user = User::where("id", Auth::user()->id)->first();
+        // $user->assignRole("admin");
     }
 }

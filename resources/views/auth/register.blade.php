@@ -29,8 +29,8 @@ License: For each use you must have a valid license purchased only from above li
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->
-		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="{{asset('assets/plugins/global/plugins.bundle.css')}}" rel="stylesheet" type="text/css" />
+		<link href="{{asset('assets/css/style.bundle.css')}}" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
 	</head>
 	<!--end::Head-->
@@ -45,7 +45,7 @@ License: For each use you must have a valid license purchased only from above li
 				<div class="d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20">
 					<!--begin::Logo-->
 					<a href="../../demo1/dist/index.html" class="mb-12">
-						<img alt="Logo" src="assets/media/logos/logo-1.svg" class="h-40px" />
+						<img alt="Logo" src="{{asset('assets/media/logos/logo-1.svg')}}" class="h-40px" />
 					</a>
 					<!--end::Logo-->
 					<!--begin::Wrapper-->
@@ -136,19 +136,8 @@ License: For each use you must have a valid license purchased only from above li
 										</span>
 									</div>
 									<!--end::Input wrapper-->
-									<!--begin::Meter-->
-									<div class="d-flex align-items-center mb-3" data-kt-password-meter-control="highlight">
-										<div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
-										<div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
-										<div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
-										<div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px"></div>
-									</div>
-									<!--end::Meter-->
 								</div>
 								<!--end::Wrapper-->
-								<!--begin::Hint-->
-								<div class="text-muted">Use 8 or more characters with a mix of letters, numbers &amp; symbols.</div>
-								<!--end::Hint-->
 							</div>
 							<!--end::Input group=-->
 							<!--begin::Input group-->
@@ -178,13 +167,12 @@ License: For each use you must have a valid license purchased only from above li
 		<!--end::Root-->
 		<!--end::Main-->
 		<!--begin::Javascript-->
-		<script>var hostUrl = "assets/";</script>
 		<!--begin::Global Javascript Bundle(used by all pages)-->
-		<script src="assets/plugins/global/plugins.bundle.js"></script>
-		<script src="assets/js/scripts.bundle.js"></script>
+		<script src="{{asset('assets/plugins/global/plugins.bundle.js')}}"></script>
+		<script src="{{asset('assets/js/scripts.bundle.js')}}"></script>
 		<!--end::Global Javascript Bundle-->
 		<!--begin::Page Custom Javascript(used by this page)-->
-		{{-- <script src="assets/js/custom/authentication/sign-up/general.js"></script> --}}
+		{{-- <script src="{{asset('assets/js/custom/authentication/sign-up/general.js')}}"></script> --}}
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
 	</body>
